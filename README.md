@@ -15,3 +15,24 @@ Drug resistance accounts for 90% of treatment failures.
 Tumors have various ways to resist drugs.
 
 We want to predict the precise medication for better clinical outcomes.
+
+## Who does this project benefit?
+
+
+## Table of Contents
+- [Data and EDA](#data-and-eda)
+- [Modelling](#modelling)
+- [Installation and Usage](#installation-and-usage)
+
+### Data and EDA
+
+### Modelling
+
+#### Cloning the Repository
+
+Clone the repository to your local machine by running:
+
+```bash
+git clone [[https://github.com/VishyFishy02/Somm_Wine_Recommendation](https://github.com/PalArora94/Drug-Effectivity-Prediction/edit/main/README.md)](https://github.com/PalArora94/Drug-Effectivity-Prediction)
+cd Drug Effectivity Prediction
+pip install-r requirements.txt
