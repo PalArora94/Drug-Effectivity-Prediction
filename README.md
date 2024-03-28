@@ -28,6 +28,13 @@ We want to predict the precise medication for better clinical outcomes.
 
 ### Modelling
 
+### Installation and Usage
+
+#### Prerequisites
+
+- Python 3.8 or later.
+- [Git](https://git-scm.com/downloads) for cloning the repository.
+  
 #### Cloning the Repository
 
 Clone the repository to your local machine by running:
