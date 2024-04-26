@@ -2,7 +2,6 @@
 Drug resistance is the biggest barrier in cancer treatment so we want to predict the sensitivity of the drugs.
 
 ## Deliverables
-
 Current therapies for Cancer treatment include:
 - Radiotherapy
 - Chemotherapy
@@ -34,9 +33,27 @@ Different cells have different RNA sequences (each sequence can be viewed as a c
 - RNA-sequence data of cell lines from the [CCLE database](https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html)
 - Drug IC50 data of cell lines from [GDSC](https://depmap.org/portal/download/all/)
 
-### Modelling
+We have about **17,000 genes**, which are used to describe tumor cells, **800 Tumor cells**, and **13 Drugs**.
 
-### Installation and Usage
+We cleaned the data a bit and merged the two data sets. After some exploration, we found  left skewness in our data and overfitting due to the high number of features compared to the data points. Thus we used the following 'feature selection' for our models:
+
+- Normalize features and choose the 50 with the largest variances
+- SHAP importance based on XG Boost results
+  
+### Modelling
+Four models we used:
+
+- Linear Regression
+- SVR (with rbf kernel)
+- XG Boost
+- Three-layer NN (2 hidden layer)
+  
+We then compared the RMSE between models and the Benchmark, the Standard Deviation of the features for each drug.
+
+Checking: used 80-20 split in training
+
+<img width="338" alt="Drug sensitivity final result" src="https://github.com/PalArora94/Drug-Effectivity-Prediction/assets/112106840/1f1f9ea0-89be-428f-8064-2230c667e921">
+
 
 #### Prerequisites
 
