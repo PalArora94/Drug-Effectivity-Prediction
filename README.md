@@ -29,7 +29,7 @@ We want to predict the **precise medication** for better clinical outcomes.
 - [Installation and Usage](#installation-and-usage)
 
 ### Data and EDA
-Different cells have different RNA sequences (each sequence can be viewed as a collection of weights among different genes). These weights are the defining features of a tumor. The IC50 of a drug is the concentration required to inhibit a specific biological or biochemical function by 50%. Hence, the drug efficacy on different tumors could be inferred based on the IC50 data. We used the following data:
+Different cells have different RNA sequences (each sequence can be viewed as a collection of weights among different genes). These weights are the defining features of a tumor. The IC50 of a drug is the concentration required to inhibit a specific biological or biochemical function by 50%. Hence, the drug efficacy on different tumors could be inferred based on the IC50 data. We used the following data:
 
 - RNA-sequence data of cell lines from the [CCLE database](https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html)
 - Drug IC50 data of cell lines from [GDSC](https://depmap.org/portal/download/all/)
